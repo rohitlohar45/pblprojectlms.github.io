@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {margin: 0;}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: right;}
+
+
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+ul.topnav li.left {float: left;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+</style>
+</head>
+<body>
+    <div class="bs-example">
+    <nav>
+            <ul class="topnav">
+                <li class="left"><a href="/" class="logo">Library Management</a></li>
+                <li class="right"><a href="/studentclick" class="nav-item nav-link">Student</a></li>
+                <li><a href="/adminclick" class="nav-item nav-link">Admin</a></li>
+                <li><a href="/aboutus" class="nav-item nav-link">About Us</a></li>
+                <li><a href="/contactus" class="nav-item nav-link">Contact Us</a></li>
+                <li><a href="/" class="nav-item nav-link active">Home</a></li>
+                
+            </ul>
+    </nav>
+    </div>  
+</body>
+</html>

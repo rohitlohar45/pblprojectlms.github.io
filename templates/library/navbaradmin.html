@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Admin Area</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<style>
+  nav{
+        align-content: center;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #111;
+    }
+    
+    li {
+        float: right;
+    }
+    
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 7px 15px 7px 15px;
+        text-decoration: none;
+    }
+    
+    li a:hover, .dropdown:hover .dropbtn {
+        background-color: #4CAF50;
+    }
+    
+    li.dropdown {
+        display: inline-block;
+    }
+  
+    .left{
+      float: left;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: fixed;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 9px 15px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1}
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="bs-example">
+    <nav>
+            <ul class="topnav">
+                <li class="left"><a href="/" class="logo">Library Management</a></li>
+             
+                <li>
+                  <a href="logout" class="nav-item nav-link">LOGOUT</a> &nbsp
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropbtn">Book</a>
+                  <div class="dropdown-content">
+                  <a href="addbook" class="dropdown-item">Add Book</a>
+                  <a href="viewbook" class="dropdown-item">View Book</a> 
+              </li>              
+              <li class="dropdown">
+                    <a href="#" class="dropbtn">Issue Book</a>
+                    <div class="dropdown-content">
+                    <a href="issuebook" class="dropdown-item">Add Book</a>
+                    <a href="viewissuedbook" class="dropdown-item">View Book</a>
+              </li>
+              <li class="dropdown">
+                    <a href="#" class="dropbtn">Student</a>
+                    <div class="dropdown-content">
+                    <a href="viewstudent" class="dropdown-item">View Student</a>
+              </li>
+             
+              <li><a href="/adminclick" class="nav-item nav-link">Admin</a></li>
+              <li><a href="/aboutus" class="nav-item nav-link">About Us</a></li>
+              <li><a href="/contactus" class="nav-item nav-link">Contact Us</a></li>
+              <li><a href="/" class="nav-item nav-link active">Home</a></li>  
+                    
+            </ul>
+    </nav>
+    </div>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #4CAF50;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul>
+
+<h3>Dropdown Menu inside a Navigation Bar</h3>
+<p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+
+</body>
+
+</html>
+-->

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Bootstrap 4 Static Navbar with Dropdown and Search Form</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<style>
+    nav{
+        align-content: center;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #111;
+    }
+    
+    li {
+        float: right;
+    }
+    
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 7px 15px 7px 15px;
+        text-decoration: none;
+    }
+    
+    li a:hover, .dropdown:hover .dropbtn {
+        background-color: #4CAF50;
+    }
+    
+    li.dropdown {
+        display: inline-block;
+    }
+  
+    .left{
+      float: left;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: fixed;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 9px 15px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1}
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    </style>
+  </head>
+  <body>
+  
+  
+    <div class="bs-example">
+      <nav>
+              <ul class="topnav">
+                  <li class="left"><a href="/" class="logo">Library Management</a></li>
+               
+                  <li>
+                    <a href="logout" class="nav-item nav-link">LOGOUT</a> &nbsp
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropbtn">Issue Book</a>
+                    <div class="dropdown-content">
+                    <a href="viewissuedbookbystudent" class="dropdown-item">View Issued</a>
+                  </li>              
+                </li>            
+                <li><a href="/aboutus" class="nav-item nav-link">About Us</a></li>
+                <li><a href="/contactus" class="nav-item nav-link">Contact Us</a></li>
+                <li><a href="/" class="nav-item nav-link active">Home</a></li>  
+                      
+              </ul>
+      </nav>
+      </div>
+<!-- <style type="text/css">
+    .bs-example{
+        margin: 0px;
+
+    }
+.navbar-brand{
+  font-size: 20px;
+  font-family: sans-serif;
+
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="bs-example">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <a href="/" class="navbar-brand">Library Management</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="/" class="nav-item nav-link active">Home</a>
+
+
+                <!--for issuebook dropdown button-->
+                <!-- <div class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Issue Book</a>
+                  <div class="dropdown-menu">
+                    <a href="viewissuedbookbystudent" class="dropdown-item">View Issued Book</a>
+                  </div>
+                </div>
+
+
+            </div>
+
+            <div class="navbar-nav">
+                <a href="logout" class="nav-item nav-link">LOGOUT</a> &nbsp
+                <a href="/aboutus" class="nav-item nav-link">About Us</a>
+                <a href="contactus" class="nav-item nav-link">Contact Us</a>
+            </div>
+
+
+
+
+        </div>
+    </nav>
+</div> -->
+
+
+</body>
+</html>
